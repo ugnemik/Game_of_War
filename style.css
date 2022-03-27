@@ -1,0 +1,65 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("table.jpeg");
+  font-family: "Ubuntu", sans-serif;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+button {
+  background-color: #fff100;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 1em 2em;
+}
+
+button.draw {
+  font-size: 1.1rem;
+  align-self: stretch;
+}
+
+div.card-slot {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 120px;
+  width: calc(120px * 5 / 7);
+}
+
+div.card-slot:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+img.card {
+  width: 100%;
+  height: 100%;
+}
+
+div.top {
+  display: flex;
+  align-items: center;
+}
+
+div.top > p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
